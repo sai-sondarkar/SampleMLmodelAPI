@@ -1,7 +1,7 @@
 # Dependencies
 from flask import Flask, request, jsonify
 from sklearn.externals import joblib
-import traceback
+import traceback2 as traceback
 import pandas as pd
 import numpy as np
 
@@ -24,7 +24,6 @@ def predict():
             print(json_)
             query = pd.get_dummies(pd.DataFrame(json_))
             query = query.reindex(columns=model_columns, fill_value=0)
-
             prediction = list(lr.predict(query))
 
             return jsonify({'prediction': str(prediction)})
