@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_sample_function():
     #Sample function for the API to host
-    return "Hello people, this is sample of Flask"
+    return "http://bit.ly/lusmapleapi"
 
 #If the file running directly please run the APP
 if __name__ == "__main__":
