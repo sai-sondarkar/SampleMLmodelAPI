@@ -18,3 +18,4 @@ Flask==1.0.3
 Flask-SQLAlchemy==2.4.0
 flask-marshmallow == 0.10.1
 traceback2 == 1.4.0
+pandas == 0.24.2
